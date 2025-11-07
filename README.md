@@ -49,7 +49,13 @@ The script automates the daily export of event data from Amplitude. It:
 git clone https://github.com/yourusername/amplitude-project.git
 ```
 
-2. Create and activate a virtual environment:
+2. Create a branch
+
+```bash
+git checkout -b your-branch-name
+```
+
+3. Create and activate a virtual environment:
 
 ```bash
 python -m venv .venv
