@@ -79,6 +79,7 @@ AMP_SECRET_KEY=your_secret_key
 
 ## File Structure
 
+```bash
 After running the script, the project folder will look like this:
 amplitude-project/
 ├── extract_amplitude_api.py # Main Python script
@@ -92,6 +93,7 @@ amplitude-project/
 │ └── logs/
 │ └── amplitude_extract_YYYYMMDD.log
 └── requirements.txt # Required Python packages
+```
 
 ---
 
