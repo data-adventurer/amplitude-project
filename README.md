@@ -27,7 +27,7 @@ The script automates the daily export of event data from Amplitude. It:
 4. Extracts `.json.gz` files from the ZIP into a date-specific folder (e.g., `data/YYYYMMDD/`).
 5. Logs all steps, warnings, and errors into a daily log file.
 
-![Data Flow Diagram](iimages/Extracting Cycle.png)
+![Data Flow Diagram](images/Extracting Cycle.png)
 
 ---
 
@@ -87,7 +87,6 @@ AMP_SECRET_KEY=your_secret_key
 
 ## File Structure
 
-```bash
 After running the script, the project folder will look like this:
 amplitude-project/
 ├── extract_amplitude_api.py # Main Python script
@@ -101,7 +100,6 @@ amplitude-project/
 │ └── logs/
 │ └── amplitude_extract_YYYYMMDD.log
 └── requirements.txt # Required Python packages
-```
 
 ---
 
