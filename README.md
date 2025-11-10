@@ -27,7 +27,7 @@ The script automates the daily export of event data from Amplitude. It:
 4. Extracts `.json.gz` files from the ZIP into a date-specific folder (e.g., `data/YYYYMMDD/`).
 5. Logs all steps, warnings, and errors into a daily log file.
 
-![Data Flow Diagram](images/Extracting Cycle.png)
+![Data Flow Diagram](https://raw.githubusercontent.com/data-adventurer/amplitude-project/images/Extracting Cycle.png)
 
 ---
 
