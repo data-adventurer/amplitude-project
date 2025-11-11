@@ -1,6 +1,7 @@
-/data
-/logs
-/zips
+zips/
+data/
+logs/
+*.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
