@@ -4,24 +4,13 @@ This repository is dedicated to the Amplitude pipeline project that goes through
 
 ---
 
-## Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [File Structure](#file-structure)
-- [Error Handling](#error-handling)
-- [Logging](#logging)
-- [Notes](#notes)
-
----
-
 ## Background
 
 Airbyte vs Python
 
 <img src="https://github.com/data-adventurer/amplitude-project/blob/main/images/Pipeline.png?raw=true">
+
+---
 
 ## Overview
 
@@ -47,7 +36,7 @@ The script automates the daily export of event data from Amplitude. It:
 
 ---
 
-## Installation
+## Setting up the Repository
 
 1. Clone this repository:
 
@@ -84,13 +73,11 @@ AMP_API_KEY=your_api_key
 AMP_SECRET_KEY=your_secret_key
 ```
 
----
-
 ## Setting up Airbyte
 
----
-
 ## Setting up AWS
+
+---
 
 ### Requirements
 
