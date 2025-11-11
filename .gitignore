@@ -2,6 +2,7 @@ zips/
 data/
 logs/
 *.zip
+zips/*.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
