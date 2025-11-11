@@ -125,15 +125,15 @@ s3_client = boto3.client(
    TYPE = EXTERNAL_STAGE
    STORAGE_PROVIDER = 'S3'
    ENABLED = TRUE
-   STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::192699161875:role/lorrainef-snowflake-amplitude-python'
-   STORAGE_ALLOWED_LOCATIONS = ('s3://lorrainef-amplitude-storage/python-import/');
+   STORAGE_AWS_ROLE_ARN = 'arn:aws:iam::xxxx:role/bucket'
+   STORAGE_ALLOWED_LOCATIONS = ('s3://bucket/directory/');
    ```
 
 3. Stage
    ```sql
    CREATE OR REPLACE STAGE lf_amplitude_python_stage
    STORAGE_INTEGRATION = lf_amplitude_python_import
-   URL = 's3://lorrainef-amplitude-storage/python-import/'
+   URL = 's3://bucket/directory/'
    FILE_FORMAT = lorrainef_json_format;
    ```
 
