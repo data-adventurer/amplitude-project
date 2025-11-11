@@ -21,7 +21,7 @@ This repository is dedicated to the Amplitude pipeline project that goes through
 
 Airbyte vs Python
 
-## <img src="https://github.com/data-adventurer/amplitude-project/blob/main/images/Pipeline.png?raw=true">
+<img src="https://github.com/data-adventurer/amplitude-project/blob/main/images/Pipeline.png?raw=true">
 
 ## Overview
 
@@ -103,6 +103,8 @@ AMP_SECRET_KEY=your_secret_key
 ---
 
 ## Usage
+
+<img src="https://github.com/data-adventurer/amplitude-project/blob/main/images/Loading%20Cycle.png?raw=true">
 
 - Ensure your .env file contains valid Amplitude API credentials.
 - The `.zip` file will be saved in the cloned repository
