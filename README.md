@@ -1,6 +1,6 @@
 # Amplitude Data Export Project
 
-This repository contains a Python script that pulls data from the Amplitude Analytics API, saves it as a `.zip` file, and extracts `.json.gz` files into a local folder for further analysis.
+This repository is dedicated to the Amplitude pipeline project that goes through the fundamental stpes of the data engineering lifecycle. The first part focused on extracting data, the second part looks into loading that data into an S3 bucket.
 
 ---
 
@@ -17,6 +17,12 @@ This repository contains a Python script that pulls data from the Amplitude Anal
 
 ---
 
+## Background
+
+Airbyte vs Python
+
+## <img src="https://github.com/data-adventurer/amplitude-project/blob/main/images/Pipeline.png?raw=true">
+
 ## Overview
 
 The script automates the daily export of event data from Amplitude. It:
@@ -27,7 +33,7 @@ The script automates the daily export of event data from Amplitude. It:
 4. Extracts `.json.gz` files from the ZIP into a date-specific folder (e.g., `data/YYYYMMDD/`).
 5. Logs all steps, warnings, and errors into a daily log file.
 
-![Data Flow Diagram](https://raw.githubusercontent.com/data-adventurer/amplitude-project/images/Extracting Cycle.png)
+<img src="https://github.com/data-adventurer/amplitude-project/blob/main/images/ExtractingCycle.png?raw=true">
 
 ---
 
@@ -73,10 +79,28 @@ pip install -r requirements.txt
 
 4. Add a .env file in the root of the project containing your Amplitude credentials:
 
-```bash
+```
 AMP_API_KEY=your_api_key
 AMP_SECRET_KEY=your_secret_key
 ```
+
+---
+
+## Setting up Airbyte
+
+---
+
+## Setting up AWS
+
+### Requirements
+
+1. Account
+2. Key
+3. Bucket
+4. User
+5. Policies
+
+---
 
 ## Usage
 
@@ -87,6 +111,7 @@ AMP_SECRET_KEY=your_secret_key
 
 ## File Structure
 
+```
 After running the script, the project folder will look like this:
 amplitude-project/
 ├── extract_amplitude_api.py # Main Python script
@@ -100,6 +125,7 @@ amplitude-project/
 │ └── logs/
 │ └── amplitude_extract_YYYYMMDD.log
 └── requirements.txt # Required Python packages
+```
 
 ---
 
