@@ -154,9 +154,13 @@ s3_client = boto3.client(
 - If the downloaded `.zip` file is corrupted or invalid, a `BadZipFile` error is printed.
 - Any other unexpected errors are caught and displayed for debugging.
 
+---
+
 ### Load
 
 This code looks through a folder on your computer, finds all the JSON files, uploads them to a specific folder in an Amazon S3 cloud storage bucket, and then deletes the copies from your computer once the upload is successful.
+
+<img src="https://github.com/data-adventurer/amplitude-project/blob/main/images/Loading%20Cycle.png?raw=true">
 
 ```python
 # List all JSON files directly in the specified data directory
@@ -184,8 +188,6 @@ for file in files_to_upload:
         print(f"Error uploading {file}: {e}")
 
 ```
-
-<img src="https://github.com/data-adventurer/amplitude-project/blob/main/images/Loading%20Cycle.png?raw=true">
 
 #### Error Handling
 
