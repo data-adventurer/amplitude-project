@@ -121,7 +121,7 @@ s3_client = boto3.client(
 2. Storage Integration
 
    ```sql
-   CREATE OR REPLACE STORAGE INTEGRATION lf_amplitude_python_import
+   CREATE OR REPLACE STORAGE INTEGRATION si_name
    TYPE = EXTERNAL_STAGE
    STORAGE_PROVIDER = 'S3'
    ENABLED = TRUE
@@ -131,10 +131,10 @@ s3_client = boto3.client(
 
 3. Stage
    ```sql
-   CREATE OR REPLACE STAGE lf_amplitude_python_stage
-   STORAGE_INTEGRATION = lf_amplitude_python_import
+   CREATE OR REPLACE STAGE stage_name
+   STORAGE_INTEGRATION = lsi_name
    URL = 's3://bucket/directory/'
-   FILE_FORMAT = lorrainef_json_format;
+   FILE_FORMAT = file_format_name;
    ```
 
 ---
