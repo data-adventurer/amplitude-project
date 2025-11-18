@@ -229,6 +229,8 @@ for file in files_to_upload:
 
 At a high level, the reasoning for this Snowflake data model and workflow comes from the specific marketing questions the team needs to answer. This led to careful planning of the schema, focusing on how data flows from raw events to consumable tables that enable analytics. The tables themselves were built in Snowflake, and SQL procedures were set up to automate the transformation steps, with future improvements planned around automating the scheduling of these processes.
 
+<img src='https://github.com/data-adventurer/amplitude-project/blob/main/images/Snowflake_Trasnformation.png?raw=true'>
+
 Below, each major procedure and step is explained in plain language, describing its purpose and how it fits into the overall bronze (raw), silver (cleansed/structured), and analytic (fact/dimensional) layer approach to building out a marketing data foundation.
 
 #### Streaming and Ingesting Raw Data (Bronze Layer)
