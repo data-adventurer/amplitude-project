@@ -55,8 +55,6 @@ destination_path = base_path
 # Create a temporary directory for extraction
 temp_dir = tempfile.mkdtemp()
 
-# print(temp_dir)
-
 # Ensure the destination directory exists
 # os.makedirs with exist_ok=True will create the directory if it does not exist
 os.makedirs(destination_path, exist_ok=True)
