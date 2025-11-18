@@ -3,6 +3,8 @@ data/
 logs/
 *.zip
 zips/*.zip
+.env*
+docker/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
