@@ -11,7 +11,7 @@ import tempfile
 
 # Calculate today's and yesterday's date for the API endpoints
 today = datetime.now()
-yesterday = today - timedelta(days=3)
+yesterday = today - timedelta(days=1)
 
 # Format start and end times for Amplitude API
 start_time = yesterday.strftime('%Y%m%dT00')

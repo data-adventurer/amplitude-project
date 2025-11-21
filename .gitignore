@@ -5,6 +5,8 @@ logs/
 zips/*.zip
 .env*
 docker/
+macros/
+seeds/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
@@ -220,3 +222,4 @@ target/
 dbt_packages/
 logs/
 # end dbt Cloud content
+dbt_internal_packages/
